@@ -1,9 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Learn more: https://github.com/kennethreitz/setup.py
-
 from setuptools import setup, find_packages
-
 
 with open('README.rst') as f:
     readme = f.read()
@@ -12,14 +9,13 @@ with open('LICENSE') as f:
     license = f.read()
 
 setup(
-    name='sample',
-    version='0.1.0',
-    description='Sample package for Python-Guide.org',
+    name='meterpy',
+    version='0.0.1',
+    description='JMeter API Test Builder & Processer',
     long_description=readme,
-    author='Kenneth Reitz',
-    author_email='me@kennethreitz.com',
-    url='https://github.com/kennethreitz/samplemod',
+    author='Joao Miguel Araujo',
+    author_email='joao19carrico94@gmail.com',
+    url='https://github.com/Joao19Araujo94/meterpy',
     license=license,
     packages=find_packages(exclude=('tests', 'docs'))
 )
-
