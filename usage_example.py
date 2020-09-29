@@ -16,18 +16,16 @@ tp = TestPlan("WorkLoad",uv)
 tg = BasicThreadGroup(test_name="querySalesEntity",number_of_threads=15,ramp_up_time=0)
 
 # Create HTTP Authorization
+# GET using no parameters with authorization
 # auths = [Authorization("https://postman-echo.com/basic-auth","postman","password","","")]
 # auths_manager = HttpAuthManager(auths)
-
-# GET using no parameters with authorization
 # http_request = HttpSampler("Postman","postman-echo.com","","https","/basic-auth","GET")
 # http_request.add_element(auths_manager)
 
 # Create HTTP Header
+# GET using no parameters with headers
 # headers = [Header("Content-Type","application/json"), Header("Accept","*/*"), Header("Connection","keep-alive"), Header("Example","Test")]
 # headers_manager = HttpHeaderManager(headers)
-
-# GET using no parameters with authorization
 # http_request = HttpSampler("Postman","postman-echo.com","","https","/headers","GET")
 # http_request.add_element(headers_manager)
 
@@ -41,7 +39,10 @@ tg = BasicThreadGroup(test_name="querySalesEntity",number_of_threads=15,ramp_up_
 # payload = "{hand:wave}"
 # http_request = HttpSampler("Postman","www.postman-echo.com","","https","/post","POST",payload=payload)
 
+# Add http to thread group
 # tg.add_element(http_request)
+
+# Add thread group to the test plan
 # tp.add_element(tg)
 
 # Convert the Test Plan to XML and write a JMX file
