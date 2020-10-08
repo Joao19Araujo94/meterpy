@@ -101,3 +101,16 @@ class CollectionProp(Prop):
             raise TypeError(f"Prop has to be of type SimpleElementProp. {type(prop)} is not compatible.")
         else:
             self.prop_list.append(prop)
+
+class DoubleProp(Prop):
+    def __init__(self,
+                 element_name,
+                 value,
+                 saved_value):
+        self.element_name = element_name
+        self.element_type = "double"
+        self.value = value
+        self.saved_value = saved_value
+
+    def __str__(self):
+        return f'<{self.element_type}Prop><name>{self.element_name}</name><value>{self.value}</value><savedValue>{self.saved_value}</savedValue></{self.element_type}Prop>'

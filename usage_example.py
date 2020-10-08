@@ -7,13 +7,13 @@ from meterpy.samplers.http import HttpSampler, HttpAuthManager, HttpHeaderManage
 
 # Create a set of User Variables which are required to run the TestPlan (Can be empty)
 # uv = UserVariables()
-uv = UserVariables({"Server_Host":"127.0.0.1","Foo":"Bar"})
+# uv = UserVariables({"Server_Host":"127.0.0.1","Foo":"Bar"})
 
 # Create a Test Plan with a given name, and user variables
-tp = TestPlan("WorkLoad",uv)
+# tp = TestPlan("WorkLoad",uv)
 
 # Create a new ThreadGroup with some settings and add to the test plan
-tg = BasicThreadGroup(test_name="querySalesEntity",number_of_threads=15,ramp_up_time=0)
+# tg = BasicThreadGroup(test_name="querySalesEntity",number_of_threads=15,ramp_up_time=0)
 
 # Create HTTP Authorization
 # GET using no parameters with authorization

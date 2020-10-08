@@ -10,7 +10,7 @@ with open('LICENSE') as f:
 
 setup(
     name='meterpy',
-    version='0.0.1',
+    version='0.4.0',
     description='JMeter API Test Builder & Processer',
     long_description=readme,
     author='Joao Miguel Araujo',
